@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/zoujian3820/mz-ui/issues"
   },
-  "homepage": "https://github.com/zoujian3820/mz-ui#readme"
+  "homepage": "https://github.com/zoujian3820/mz-ui#readme",
+  "dependencies": {
+    "vue": "^3.2.2"
+  }
 }
