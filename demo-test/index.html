@@ -1,0 +1,48 @@
+<!--
+ * @Author: mrzou
+ * @Date: 2021-08-14 00:28:42
+ * @LastEditors: mrzou
+ * @LastEditTime: 2021-08-16 21:53:02
+ * @Description: file content
+-->
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mz-ui</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --button-height: 32px;
+        --font-size: 14px;
+        --button-bg: white;
+        --button-active-bg: #eee;
+        --border-radius: 4px;
+        --color: #333;
+        --border-color: #999;
+        --border-color-hover: #666;
+      }
+      #app {
+        margin: 20px;
+      }
+      body {
+        font-size: var(--font-size);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <m-button></m-button>
+      <!-- <li v-for="i in list" :key="i">{{i}}</li> -->
+    </div>
+    <!-- <script src="./node_modules/vue/dist/vue.global.prod.js"></script> -->
+    <!-- <script src="./button.js"></script> -->
+    <script src="./src/app.js"></script>
+  </body>
+</html>
