@@ -1,3 +1,10 @@
+/*
+ * @Author: mrzou
+ * @Date: 2021-08-17 16:17:18
+ * @LastEditors: mrzou
+ * @LastEditTime: 2021-08-17 17:50:54
+ * @Description: file content
+ */
 module.exports = {
   root: true,
   env: {
@@ -16,6 +23,7 @@ module.exports = {
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "@typescript-eslint/no-var-requires": 0,
   },
   overrides: [
     {
