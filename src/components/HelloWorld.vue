@@ -103,15 +103,19 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue"
+import { defineComponent, PropType } from "vue"
+const PropTypes = {
+  msg: {
+    type: String as PropType<string>,
+    required: true,
+  },
+} as const
 
 export default defineComponent({
   name: "HelloWorld",
-  props: {
-    msg: {
-      type: String,
-      require: true,
-    },
+  props: PropTypes,
+  mounted() {
+    this.msg
   },
 })
 </script>

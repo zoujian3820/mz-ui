@@ -2,13 +2,13 @@
  * @Author: mrzou
  * @Date: 2021-08-17 17:19:44
  * @LastEditors: mrzou
- * @LastEditTime: 2021-08-17 18:00:45
+ * @LastEditTime: 2021-08-18 16:39:02
  * @Description: file content
  */
 import { defineComponent, reactive, ref } from "vue"
 
-import HelloWorld from "./components/HelloWorld.vue"
-const img = require("./assets/logo.png")
+import HelloWorld from "./components/HelloWorld"
+const img = require("./assets/logo.png") // eslint-disable-line
 
 function renderHelloWorld(str: string) {
   return <HelloWorld msg={str} />
