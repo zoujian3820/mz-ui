@@ -2,7 +2,7 @@
  * @Author: mrzou
  * @Date: 2021-08-17 16:17:18
  * @LastEditors: mrzou
- * @LastEditTime: 2021-08-17 17:50:54
+ * @LastEditTime: 2021-08-19 23:41:05
  * @Description: file content
  */
 module.exports = {
@@ -24,6 +24,10 @@ module.exports = {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
     "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/no-use-before-define": "off",
+    "no-prototype-builtins": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "vue/no-mutating-props": "off",
   },
   overrides: [
     {
