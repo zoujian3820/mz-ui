@@ -2123,12 +2123,22 @@ ajv-errors@^1.0.0:
   resolved "https://registry.nlark.com/ajv-errors/download/ajv-errors-1.0.1.tgz#f35986aceb91afadec4102fbd85014950cefa64d"
   integrity sha1-81mGrOuRr63sQQL72FAUlQzvpk0=
 
+ajv-errors@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.nlark.com/ajv-errors/download/ajv-errors-3.0.0.tgz#e54f299f3a3d30fe144161e5f0d8d51196c527bc"
+  integrity sha1-5U8pnzo9MP4UQWHl8NjVEZbFJ7w=
+
 ajv-formats@^2.1.1:
   version "2.1.1"
   resolved "https://registry.nlark.com/ajv-formats/download/ajv-formats-2.1.1.tgz#6e669400659eb74973bbf2e33327180a0996b520"
   integrity sha1-bmaUAGWet0lzu/LjMycYCgmWtSA=
   dependencies:
     ajv "^8.0.0"
+
+ajv-i18n@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.nlark.com/ajv-i18n/download/ajv-i18n-4.0.1.tgz#7b80d2dbaab1dca89becb18c76eb2ee908d3db71"
+  integrity sha1-e4DS26qx3Kib7LGMdusu6QjT23E=
 
 ajv-keywords@^3.1.0, ajv-keywords@^3.4.1, ajv-keywords@^3.5.2:
   version "3.5.2"
