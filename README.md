@@ -1,5 +1,14 @@
+<!--
+ * @Author: mrzou
+ * @Date: 2021-08-17 16:17:18
+ * @LastEditors: mrzou
+ * @LastEditTime: 2021-08-20 16:05:10
+ * @Description: file content
+-->
+
 # mz ui
 
+![Coverage](https://img.shields.io/codecov/c/gh/zoujian3820/mz-ui/master)
 
 ## Project setup
 
