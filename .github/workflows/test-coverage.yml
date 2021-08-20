@@ -21,6 +21,13 @@ jobs: # 要执行的任务
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
-      - run: npm run test:unit
+      - run: npm run test:unit:cov
         env:
           CI: true # 声明node运行时的环境变量 process.env.CI
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
+        with:
+          flags: unittests
+          file: ./coverage/clover.xml
+          fail_ci_if_error: true # 如果出错，则停止ci
