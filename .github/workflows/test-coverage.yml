@@ -1,0 +1,26 @@
+name: test-coverage # 任务名字
+
+on: [push] # 在什么时候触发执行这个任务 如  merge、pr
+
+jobs: # 要执行的任务
+  build: # 第一步执行 build
+    runs-on: ${{ matrix.os }} # 在哪个平台哪个系统运行，因为要多个平台，所以写变量
+
+    strategy:
+      matrix: # 声明矩阵 nodejs每个平台都安装三个版本的node测试
+        node-version: [8.x, 10.x, 12.x]
+        os: [ubuntu-latest, macos-latest, windows-latest]
+
+    steps: # 执行任务的流程
+      # github的action是可以继承其他的action 
+      # 所以可以先在其他地方提前声明好一些通用的action 
+      # 然后通过继承来直接使用已经声明好的action
+      - uses: actions/checkout@v2 # github本身已经声明好的 https://github.com/actions/checkout 把代码切到操作系统上执行
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1 # 也是已经提前预设好的配置node环境的任务
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm install
+      - run: npm run test:unit
+        env:
+          CI: true # 声明node运行时的环境变量 process.env.CI
