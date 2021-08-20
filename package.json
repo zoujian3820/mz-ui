@@ -1,14 +1,24 @@
 {
   "name": "vue3-mz-ui",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:unit:cov": "vue-cli-service test:unit --coverage",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build:core": "vue-cli-service build",
+    "build:theme": "vue-cli-service build",
+    "build": "rimraf dist && npm run build:core && npm run build:theme",
+    "prepublishOnly": "npm run build"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.common.js",
   "dependencies": {
     "ajv": "^8.6.2",
     "ajv-errors": "^3.0.0",
@@ -41,6 +51,7 @@
     "lint-staged": "^9.5.0",
     "monaco-editor": "^0.27.0",
     "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
     "typescript": "~4.1.5",
     "vue-jest": "^5.0.0-0"
   },
