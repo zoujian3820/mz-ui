@@ -1,6 +1,6 @@
 {
   "name": "vue3-mz-ui",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -11,7 +11,7 @@
     "build:theme": "vue-cli-service build",
     "build2": "rimraf dist && npm run build:core && npm run build:theme",
     "build": "rimraf dist && npm run build:core",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly33": "npm run build"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -19,7 +19,7 @@
   "files": [
     "dist"
   ],
-  "main": "dist/index.common.js",
+  "main": "dist/vue3-mz-ui.umd.js",
   "dependencies": {
     "ajv": "^8.6.2",
     "ajv-errors": "^3.0.0",
