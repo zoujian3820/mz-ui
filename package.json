@@ -11,7 +11,7 @@
     "build:theme": "vue-cli-service build",
     "build2": "rimraf dist && npm run build:core && npm run build:theme",
     "build": "rimraf dist && npm run build:core",
-    "prepublishOnly33": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
